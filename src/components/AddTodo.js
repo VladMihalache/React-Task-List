@@ -43,7 +43,7 @@ export class AddTodo extends Component {
 
                     <div className="create">
                         <h1>Create a new task</h1>
-                        <img href="./imageAssets/xWhite.png" alt="" className="closeX" onClick={this.minimize} /> 
+                        <div className="closeX" onClick={this.minimize}></div> 
                     </div>
 
                     <input 

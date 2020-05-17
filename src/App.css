@@ -118,6 +118,9 @@ a{
 
 .closeX{
   cursor: pointer;
+  background-image: url("./imageAssets/close.png");
+  background-repeat: no-repeat;
+  background-position: center;
   height:25px;
   width:25px;
   margin-left:180px;
@@ -358,27 +361,28 @@ transform:translate(-35%, 50%)
   outline:none;
 }
 
-
 .submitButtonBlue{
+  cursor:pointer;
   height:56px;
   width:170px;
+  padding: 15px;
+  padding-right: 8px;
+  border:none;
+  border-radius: 20px;
+  margin: 0 auto;
   font-size: 15px;
+  font-family: Circular Std Book;
+  font-weight: 400;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #2F58E2;
-  color:#ffffff;
-  padding: 15px;
-  margin: 0 auto;
-  border:none;
-  border-radius: 20px;
   box-shadow: 0px 10px 20px 5px #2F58E250;
-  font-family: Circular Std Book;
-  font-weight: 400;
-  padding-right: 8px;
+  color:#ffffff;
 }
 
 .submitButtonBlue span{
+  cursor:pointer;
   font-size:25px;
   line-height:1;
   font-family: Roboto;
@@ -386,6 +390,7 @@ transform:translate(-35%, 50%)
 }
 
 .addSubmitBlue{
+  cursor:pointer;
   font-size: 15px;
   background-color: transparent;
   color:#ffffff;
@@ -429,12 +434,9 @@ transform:translate(-35%, 50%)
   margin-left: 25px;
 }
 
-
-
 .done:focus{
   outline:none;
 }
-
 
 .height{
   display: flex;
@@ -481,21 +483,19 @@ transform:translate(-35%, 50%)
 
 .deleteX{
   cursor: pointer;
+  background-image: url("./imageAssets/delete.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 20px;
   margin-left:auto;
-  padding: 20px;
-  border-radius:50%;
+  margin-right:50px;
+  height:14px;
+  width:14px;
   transition: 0.2s all ease-in-out;
-  font-size:25px;
-  font-weight:bold;
   float: right;
 }
-
-.deleteX:hover{
-  color:rgb(211, 29, 29);
-}
-
-
 /* ------------  TodoBar  ------------ */
+
 .containerBar{
   display:flex;
   max-width:600px;
