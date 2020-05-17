@@ -30,14 +30,13 @@ export class AddTodo extends Component {
     render() {
         return (
             <div>
-                <div className="submitButtonBlue">
-                        <span>+</span>
+                <div onClick={this.extend} className="submitButtonBlue">
+                    <span>+</span>
                     <input 
                     className='addSubmitBlue'
                     type='submit'
                     value='Create Task'
                     onClick={this.extend}
-
                     />
                 </div>
                 <form className="containerAdd" onSubmit={this.onSubmit}>
@@ -102,15 +101,11 @@ export class AddTodo extends Component {
 
                     </div>
 
-                    <div className="submitButton">
-                        <span>+</span>
                     <input 
-                    className='addSubmit'
+                    className="submitButton"
                     type='submit'
-                    value='Create Task'
-
+                    value='Add Task'
                     />
-                    </div>
                     
                     
                 </form>

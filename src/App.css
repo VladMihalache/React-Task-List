@@ -24,6 +24,7 @@ img{
   padding-top:40px;
   padding-bottom:0px;
   margin: 0 auto;
+  overflow: hidden;
   border-radius: 13% / 6%;
   position: relative;
 }
@@ -123,10 +124,11 @@ a{
 
 /* ------------  Todos  ------------ */
 .todoScroll{
-  height: 595px;
-  max-height:595px;
+  
+  max-height:100%;
   overflow-x:hidden ;
   overflow-y:scroll ;
+  padding-bottom:200px;
 }
 
 .container{
@@ -214,7 +216,7 @@ a{
 .radio{
   display:flex;
   color:white;
-  margin-bottom:50px;
+  margin-bottom:58px;
   padding-left: 20px;
   color:#2F58E2;
 }
@@ -388,53 +390,34 @@ transform:translate(-35%, 50%)
   border-radius: 20px;
   box-shadow: 0px 10px 20px 5px #ffffff50;
   font-family: Circular Std Book;
-  padding-right: 8px;
-  margin-top: 16px;
 }
 
-.submitButton span{
-  font-size:25px;
-  line-height:1;
-  cursor: pointer;
-  font-family: Roboto;
-  font-weight: 300;
-}
-
-.addSubmit{
-  font-size: 15px;
-  cursor: pointer;
-  background-color: transparent;
-  color:#2F58E2;
-  margin: 0 auto;
-  border:none;
-  border-radius: 10% / 40%;
-  font-family: Circular Std Book;
-  padding-top: 4px;
-  margin: 0 5px;
-}
-
-.addSubmit:focus{
+.submitButton:focus{
   outline:none;
 }
 
 .submitButtonBlue{
   cursor:pointer;
+  background-color: #2F58E2;
+  box-shadow: 0px 10px 20px 5px #2F58E250;
+  color:#ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left:50%;
+  bottom:5%;
+  transform: translate(-50%, 0);
   height:56px;
   width:170px;
+  margin: 0 auto;
   padding: 15px;
   padding-right: 8px;
   border:none;
   border-radius: 20px;
-  margin: 0 auto;
   font-size: 15px;
   font-family: Circular Std Book;
   font-weight: 400;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #2F58E2;
-  box-shadow: 0px 10px 20px 5px #2F58E250;
-  color:#ffffff;
 }
 
 .submitButtonBlue span{
