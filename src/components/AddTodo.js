@@ -7,13 +7,14 @@ export class AddTodo extends Component {
     }
 
     extend = () =>{
-        document.querySelector(".containerAdd").style.display='flex';
-
+        document.querySelector(".containerAdd").style.zIndex='5'
+        setTimeout(function(){document.querySelector(".containerAdd").style.opacity='1'}, 300);
     }
 
 
     minimize = () =>{
-        document.querySelector(".containerAdd").style.display='none';
+        document.querySelector(".containerAdd").style.opacity='0';
+        setTimeout(function(){document.querySelector(".containerAdd").style.zIndex='-5';}, 300);
     }
 
     onSubmit = (e) =>{

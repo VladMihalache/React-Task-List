@@ -72,6 +72,14 @@ a{
   font-style: italic;
 }
 
+::-webkit-scrollbar{
+ width:12px 
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: blue;
+}
+
 /* ------------  Todos  ------------ */
 
 .titleBox{
@@ -108,10 +116,17 @@ a{
 }
 
 /* ------------  AddTodo  ------------ */
+
+
+
 .containerAdd{
   background-image:url("./imageAssets/bg1.png");
   background-repeat: no-repeat;
-  display:none; /*flex*/
+  opacity:0;
+  z-index:-5;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  transition: 0.2s linear;
   flex-direction: column;
   width:572px;
   height:447px;
