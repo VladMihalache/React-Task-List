@@ -17,7 +17,7 @@ state={
   todos:[
     {title : 'Create UI Element', priority: 'Very High', completed : false, id : 1}, 
     {title : 'Make this UI for Free :)', priority: 'Very High', completed : true, id : 2}, 
-    {title : 'Add more content on Dribbble profile', priority: 'High', completed : false, id : 3}, 
+    {title : 'Add more creative content on Dribbble profile', priority: 'High', completed : false, id : 3}, 
     {title : 'Do this UI modern & creative', priority: 'High', completed : true, id : 4}, 
   ],
   itemsToShow:0,
