@@ -111,6 +111,9 @@ a{
   color:#ffffff;
   padding-left:30px;
   justify-self: flex-start;
+  font-family: Circular Std Book;
+  font-weight: 500;
+  font-size: 22px;
 }
 
 .closeX{
@@ -125,12 +128,13 @@ a{
   width:80%;
   padding: 15px;
   padding-left:0px;
-  font-size: 18px;
+  font-size: 15px;
   color:#ffffff;
   background-color: transparent; 
   border:none;
   border-bottom: 1px solid #FFFFFF;
   margin: 30px;
+  font-family: Circular Std Book;
 }
 
 .addInput:focus{
@@ -144,6 +148,8 @@ a{
   font-weight:500;
   padding-left:30px;
   margin-bottom:10px;
+  font-size: 15px;
+  font-family: Circular Std Book;
 }
 
 .radio{
@@ -165,6 +171,9 @@ a{
   -webkit-appearance: none;
   transition:0.5s;
   position:relative;
+  font-family: Circular Std Book;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .option1::after{
@@ -200,6 +209,9 @@ transform:translate(-35%, 50%)
   -webkit-appearance: none;
   transition:0.5s;
   position:relative;
+  font-family: Circular Std Book;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .option2::after{
@@ -235,6 +247,9 @@ transform:translate(-35%, 50%)
   -webkit-appearance: none;
   transition:0.5s;
   position:relative;
+  font-family: Circular Std Book;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .option3::after{
@@ -270,6 +285,9 @@ transform:translate(-35%, 50%)
   -webkit-appearance: none;
   transition:0.5s;
   position:relative;
+  font-family: Circular Std Book;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .option4::after{
@@ -297,7 +315,7 @@ transform:translate(-35%, 50%)
   cursor: pointer;
   height:56px;
   width:170px;
-  font-size: 18px;
+  font-size: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -310,22 +328,27 @@ transform:translate(-35%, 50%)
   border:none;
   border-radius: 10% / 32%;
   box-shadow: 0px 10px 20px 5px #ffffff50;
+  font-family: Circular Std Book;
 }
 
 .submitButton span{
-  font-size:26px;
+  font-size:25px;
   line-height:1;
   cursor: pointer;
+  font-family: Roboto;
 }
 
 .addSubmit{
-  font-size: 18px;
+  font-size: 15px;
   cursor: pointer;
   background-color: transparent;
   color:#2F58E2;
   margin: 0 auto;
   border:none;
   border-radius: 10% / 40%;
+  font-family: Circular Std Book;
+  padding-top: 4px;
+  margin: 0 5px;
 }
 
 .addSubmit:focus{
@@ -336,7 +359,7 @@ transform:translate(-35%, 50%)
 .submitButtonBlue{
   height:56px;
   width:170px;
-  font-size: 18px;
+  font-size: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -347,20 +370,26 @@ transform:translate(-35%, 50%)
   border:none;
   border-radius: 10% / 40%;
   box-shadow: 0px 10px 20px 5px #2F58E250;
+  font-family: Circular Std Book;
+  font-weight: 400;
 }
 
 .submitButtonBlue span{
-  font-size:26px;
+  font-size:25px;
   line-height:1;
+  font-family: Roboto;
 }
 
 .addSubmitBlue{
-  font-size: 18px;
+  font-size: 15px;
   background-color: transparent;
   color:#ffffff;
   margin: 0 auto;
   border:none;
   border-radius: 10% / 40%;
+  font-family: Circular Std Book;
+  padding-top: 4px;
+  margin: 0 5px;
 }
 
 .addSubmitBlue:focus{
@@ -423,18 +452,24 @@ transform:translate(-35%, 50%)
   justify-self: center;
   align-self: center;
   flex-direction: column;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.1;
   padding:0px !important; 
+  font-family: Circular Std Book;
+  color: #0A0D47;
+  font-weight: 500;
 }
 
 .text .prio{
   display: flex;
   justify-self: center;
   align-self: center;
-  font-size: 18px;
+  font-size: 15px;
   margin: 0;
   flex-direction: column;
+  color: #A2A3B9;
+  font-weight: 400;
+  font-family: Circular Std Book;
 }
 
 .deleteX{
@@ -464,10 +499,11 @@ transform:translate(-35%, 50%)
 
 .containerBar button{
   padding: 15px;
-  font-size: 18px;
+  font-size: 15px;
   background-color: #F5F7FA;
   color:#A2A3B9;
   border:none;
+  font-family: Circular Std Book;
 }
 
 .containerBar button:focus{
@@ -477,7 +513,8 @@ transform:translate(-35%, 50%)
 
 .containerBar .del{
   flex-basis:33%;
-  font-size: 18px;
+  font-size: 15px;
   padding-top: 18.5px;
   padding-bottom:18.5px;
+  font-family: Circular Std Book;
 }
