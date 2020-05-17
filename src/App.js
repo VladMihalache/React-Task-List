@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import TodoTitle from './components/TodoTitle'
 import TodosVeryHigh from './components/TodosVeryHigh'
 import TodosHigh from './components/TodosHigh'
 import TodosMedium from './components/TodosMedium'
@@ -63,6 +64,7 @@ delCompleted = () =>{
 
     return (
       <div className="App">
+        <TodoTitle/>
         <TodoBar showAll={this.showAll} showUncompleted={this.showUncompleted} showCompleted={this.showCompleted} delCompleted={this.delCompleted} />
         <div className="todoScroll">
           <TodosVeryHigh todos={ this.state.todos } markComplete={ this.markComplete } delTodo={ this.delTodo } itemsToShow={this.state.itemsToShow}/>
