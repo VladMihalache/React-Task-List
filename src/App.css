@@ -20,8 +20,8 @@ img{
   background-color:#F5F7FA ;
   color:1px solid #707070;
   width:542px;
-  height: 844px;
-  padding-top:100px;
+  height: 900px;
+  padding-top:40px;
   padding-bottom:0px;
   margin: 0 auto;
   border-radius: 13% / 6%;
@@ -50,6 +50,25 @@ a{
   font-size: 18px;
   text-decoration: none;
   color:white;
+}
+.thisDay {
+  display: flex;
+    justify-self: center;
+    align-self: center;
+    font-size: 15px;
+    margin: 0;
+    flex-direction: column;
+    color: #A2A3B9;
+    font-weight: 400;
+    font-family: Circular Std Book;
+    margin-left: 58px;
+}
+.mainTitle {
+  font-family: Circular Std Black;
+  font-weight: 500;
+  font-size: 22px;
+  margin-left: 58px;
+  margin-bottom: 20px;
 }
 
 /* Placeholders*/
@@ -88,15 +107,17 @@ a{
 }
 
 .blueCircle{
-  width:30px;
-  height:30px;
+  width:50px;
+  height:50px;
   margin: 0 auto;
-  margin-right:50px;
+  margin-right:70px;
   background-image: url('./imageAssets/avatar.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius:50%;
+  margin-top: -24px;
+  box-shadow: 0px 10px 20px 5px rgba(47, 89, 226, 0.1);
 }
 
 /* ------------  Todos  ------------ */
@@ -145,7 +166,7 @@ a{
   color:#ffffff;
   padding-left:30px;
   justify-self: flex-start;
-  font-family: Circular Std Book;
+  font-family: Circular Std Black;
   font-weight: 500;
   font-size: 22px;
 }
@@ -497,7 +518,7 @@ transform:translate(-35%, 50%)
   align-self: center;
   flex-direction: column;
   font-size: 18px;
-  line-height: 1.1;
+  line-height: 1.4;
   padding:0px !important; 
   font-family: Circular Std Book;
   color: #0A0D47;
@@ -538,6 +559,7 @@ transform:translate(-35%, 50%)
   margin: 0 auto;
   align-items:center;
   justify-content:center;
+  margin-bottom: 20px;
 }
 
 .containerBar button{

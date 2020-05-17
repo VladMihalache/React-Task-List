@@ -7,8 +7,8 @@ export class TodosTitle extends Component {
         return (
             <div className="titleBox">
                 <div >
-                    <p>Today's task</p>
-                    <p className="thisDay" >18/5/2020</p>
+                    <p className="thisDay" >18.05.2020</p>
+                    <p className="mainTitle">Today Tasks</p>
                 </div>
                 <div className="blueCircle"></div>
             </div>
