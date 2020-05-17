@@ -73,6 +73,25 @@ a{
 }
 
 /* ------------  Todos  ------------ */
+
+.titleBox{
+  display: flex;
+  align-items: center;
+}
+
+.blueCircle{
+  width:30px;
+  height:30px;
+  margin: 0 auto;
+  margin-right:50px;
+  background-image: url('./imageAssets/avatar.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius:50%;
+}
+
+/* ------------  Todos  ------------ */
 .todoScroll{
   height: 595px;
   max-height:595px;
@@ -422,6 +441,7 @@ transform:translate(-35%, 50%)
   display:flex;
   cursor: pointer;
   width: 21px;
+  min-width: 21px;
   height: 21px;
   margin: 15px;
   border-radius: 22% / 26%;
@@ -491,6 +511,7 @@ transform:translate(-35%, 50%)
   margin-right:50px;
   height:14px;
   width:14px;
+  min-width:14px;
   transition: 0.2s all ease-in-out;
   float: right;
 }
