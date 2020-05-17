@@ -48,7 +48,7 @@ export class TodoItem extends Component {
                             <p className="prio" >{priority}</p>
                         </div>
                     </div>
-                    <span className='deleteX' onClick={this.props.delTodo.bind(this, id)}  >X</span> 
+                    <img src=".\imageAssets\xWhite2.png" alt=" " className='deleteX' onClick={this.props.delTodo.bind(this, id)} />
                 </div>
             </div>
         )

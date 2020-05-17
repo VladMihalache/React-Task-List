@@ -420,6 +420,7 @@ transform:translate(-35%, 50%)
   -webkit-appearance: none;
   transition:0.5s;
   position:relative;
+  margin-left: 25px!important;
 }
 
 
@@ -451,6 +452,7 @@ transform:translate(-35%, 50%)
   height:42px;
   margin: 25px;
   border-radius: 66% / 9%;
+  margin-left: 10px!important;
 }
 
 .text .todoTitle{
