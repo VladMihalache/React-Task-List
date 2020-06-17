@@ -6,6 +6,7 @@ html{
 body{
   background-color: #E8EBF3;
   margin: 0;
+  padding-top:35px;
 }
 
 *{
@@ -488,6 +489,7 @@ transform:translate(-35%, 50%)
 .line{
   background-color: #FF006F; /*#1AFF00*/
   box-shadow: 0px 0px 10px 2.5px #FF006F50; /*#1AFF0050*/
+  transition:0.5s;
   min-width:3px;
   width:3px;
   height:42px;
