@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/React-Task-List/static/css/main.7aff64e7.chunk.css",
+    "main.js": "/React-Task-List/static/js/main.97122ecb.chunk.js",
+    "main.js.map": "/React-Task-List/static/js/main.97122ecb.chunk.js.map",
+    "runtime-main.js": "/React-Task-List/static/js/runtime-main.01aab593.js",
+    "runtime-main.js.map": "/React-Task-List/static/js/runtime-main.01aab593.js.map",
+    "static/js/2.d5510226.chunk.js": "/React-Task-List/static/js/2.d5510226.chunk.js",
+    "static/js/2.d5510226.chunk.js.map": "/React-Task-List/static/js/2.d5510226.chunk.js.map",
+    "index.html": "/React-Task-List/index.html",
+    "precache-manifest.2ac9b92d7c936bcbed3b4af47dd6dd8d.js": "/React-Task-List/precache-manifest.2ac9b92d7c936bcbed3b4af47dd6dd8d.js",
+    "service-worker.js": "/React-Task-List/service-worker.js",
+    "static/css/main.7aff64e7.chunk.css.map": "/React-Task-List/static/css/main.7aff64e7.chunk.css.map",
+    "static/js/2.d5510226.chunk.js.LICENSE.txt": "/React-Task-List/static/js/2.d5510226.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/React-Task-List/static/media/bg1.f78f5954.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.01aab593.js",
+    "static/js/2.d5510226.chunk.js",
+    "static/css/main.7aff64e7.chunk.css",
+    "static/js/main.97122ecb.chunk.js"
+  ]
+}
