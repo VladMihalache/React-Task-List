@@ -13,57 +13,75 @@ import './App.css';
 
 export class App extends Component {
 
-state={
-  todos:[
-    {title : 'Create UI Element', priority: 'Very High', completed : false, id : 1}, 
-    {title : 'Make this UI for Free :)', priority: 'Very High', completed : true, id : 2}, 
-    {title : 'Add more creative content on Dribbble profile', priority: 'High', completed : false, id : 3}, 
-    {title : 'Do this UI modern & creative', priority: 'High', completed : true, id : 4}, 
-  ],
-  itemsToShow:0,
-}
+  state={
+    todos: 
+    [
+    ],
+    itemsToShow: 0,
+  }
 
-
-markComplete = (id) =>{
-  this.setState({todos: this.state.todos.map(todo => {
-    if(todo.id===id)
+  markComplete = (id) =>{
+    this.setState({todos: this.state.todos.map(todo => {
+    if(todo.id === id)
       todo.completed = !todo.completed;
       return todo;
-  }) })
-}
-
-delTodo = (id) =>{
-  this.setState({todos: this.state.todos.filter(todo => todo.id!==id)})
-}
-
-addTodo = (title, priority) =>{
-const newTodo={
-  completed:false,
-  title,
-  priority,
-  id:uuidv4()
+    }) })
+    let markedStorageItem = JSON.parse(localStorage.getItem(id));
+    markedStorageItem.completed = !markedStorageItem.completed
+    localStorage.setItem(id, JSON.stringify(markedStorageItem));
   }
-  this.setState({todos: [...this.state.todos, newTodo]})
-} 
 
-showAll = () =>{
-  this.setState({itemsToShow: 0})
-}
+  delTodo = (id) =>{
+    this.setState({todos: this.state.todos.filter(todo => todo.id!==id)})
+    localStorage.removeItem(id);
+  }
 
-showUncompleted = () =>{
-  this.setState({itemsToShow: 1})
-}
+  addTodo = (title, priority) =>{
+    const newTodo={
+      completed:false,
+      title,
+      priority,
+      id:uuidv4()
+    }
+    this.setState({todos: [...this.state.todos, newTodo]})
+    localStorage.setItem(newTodo.id, JSON.stringify(newTodo))
+    this.initTheState();
+  } 
 
-showCompleted = () =>{
-  this.setState({itemsToShow: 2})
-}
+  showAll = () =>{
+    this.setState({itemsToShow: 0})
+  }
 
-delCompleted = () =>{
-  this.setState({todos: this.state.todos.filter(todo => todo.completed!==true)})
-}
+  showUncompleted = () =>{
+    this.setState({itemsToShow: 1})
+  }
+
+  showCompleted = () =>{
+    this.setState({itemsToShow: 2})
+  }
+
+  delCompleted = () =>{
+    this.setState({todos: this.state.todos.filter(todo => todo.completed!==true)})
+    Object.keys(localStorage).forEach(function(key){
+      let parsedStorageItem = JSON.parse(localStorage.getItem(key));
+      if(parsedStorageItem.completed)
+      localStorage.removeItem(key)
+   });
+  }
+  
+  initTheState = () => {
+    let storageLoad = []
+    Object.keys(localStorage).forEach(function(key){
+      let storedStorageItem = JSON.parse(localStorage.getItem(key));
+      storageLoad.push(storedStorageItem)
+   });
+   this.setState({todos: storageLoad})
+  }
 
   render() {
-
+    if( this.state.todos.length === 0 ){
+      this.initTheState();
+    }
     return (
       <div className="App">
         <TodoTitle/>
