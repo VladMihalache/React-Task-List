@@ -36,7 +36,7 @@ export class TodoItem extends Component {
     }
 
     render() {
-        const {id, title, priority } = this.props.todo;
+        const {id, title, priorityDisplay } = this.props.todo;
         return (
             <div className='container'>
                 <div className='todoElement'>
@@ -45,7 +45,7 @@ export class TodoItem extends Component {
                         <div className="line" style={this.getLine()}></div>
                         <div className="text">
                             <p className="todoTitle" style={this.getStyle() } >{title}</p>
-                            <p className="prio" >{priority}</p>
+                            <p className="prio" >{priorityDisplay}</p>
                         </div>
                     </div>
                     <div className="deleteX" onClick={this.props.delTodo.bind(this, id)} ></div>
